@@ -40,7 +40,7 @@ console.log('\n✅ All environment variables are set!');
 console.log('🔄 Starting server...');
 
 // Import and start the server
-import('./server/index.js').catch(error => {
+import('./dist/index.js').catch(error => {
   console.error('❌ Failed to start server:', error.message);
   console.error('Stack trace:', error.stack);
   process.exit(1);
