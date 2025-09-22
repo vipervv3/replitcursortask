@@ -2,20 +2,20 @@
 # Set these variables in Railway dashboard under your project settings
 
 # Database Configuration
-DATABASE_URL=postgresql://username:password@host:port/database
+DATABASE_URL=postgresql://postgres:RjYakjrtGkBVSDNcOfWWgPSxNCWbdwwV@metro.proxy.rlwy.net:42192/railway
 
 # Session Configuration
-SESSION_SECRET=your-super-secure-session-secret-here
+SESSION_SECRET=eab6f56220979cc76b1f72b9800420eb107286e8735fad2a984cdf4a13e86c8a
 
 # AI Services
-ASSEMBLYAI_API_KEY=your-assemblyai-api-key
 OPENAI_API_KEY=your-openai-api-key
+ASSEMBLYAI_API_KEY=your-assemblyai-api-key
+RESEND_API_KEY=your-resend-api-key
 GROQ_API_KEY=your-groq-api-key
 
 # Email Service
-RESEND_API_KEY=your-resend-api-key
-FROM_EMAIL=AI ProjectHub <noreply@yourdomain.com>
 
+FROM_EMAIL=AI ProjectHub <noreply@omarb.in>
 # Outlook Integration (Optional)
 OUTLOOK_CLIENT_ID=your-outlook-client-id
 OUTLOOK_CLIENT_SECRET=your-outlook-client-secret
