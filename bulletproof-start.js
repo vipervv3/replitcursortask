@@ -47,6 +47,33 @@ try {
   console.log('⚠️  Static files not available:', error.message);
 }
 
+// Handle PWA icon requests with a simple SVG icon
+app.get('/pwa-icon-192.png', (req, res) => {
+  const svgIcon = `
+    <svg width="192" height="192" xmlns="http://www.w3.org/2000/svg">
+      <rect width="192" height="192" fill="#6366f1"/>
+      <text x="96" y="110" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="24" font-weight="bold">AI</text>
+      <text x="96" y="140" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16">ProjectHub</text>
+    </svg>
+  `;
+  res.setHeader('Content-Type', 'image/svg+xml');
+  res.setHeader('Cache-Control', 'public, max-age=31536000');
+  res.send(svgIcon);
+});
+
+app.get('/pwa-icon-512.png', (req, res) => {
+  const svgIcon = `
+    <svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+      <rect width="512" height="512" fill="#6366f1"/>
+      <text x="256" y="280" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="64" font-weight="bold">AI</text>
+      <text x="256" y="360" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="32">ProjectHub</text>
+    </svg>
+  `;
+  res.setHeader('Content-Type', 'image/svg+xml');
+  res.setHeader('Cache-Control', 'public, max-age=31536000');
+  res.send(svgIcon);
+});
+
 // Basic API routes
 app.get('/api/hello', (req, res) => {
   res.json({
