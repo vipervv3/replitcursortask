@@ -1,0 +1,5 @@
+id,user_id,title,message,type,read,data,created_at
+cbaa2160-4033-472a-880c-83b1d032ffd0,cf9c6d60-3c47-44fc-88ed-ecc2980eb33c,Project Invitation,You've been invited to join "Project 2",project,false,[object Object],Sun Aug 17 2025 23:57:47 GMT-0400 (Eastern Daylight Time)
+a43d8726-5222-4aeb-9e05-40166d3dae34,cf9c6d60-3c47-44fc-88ed-ecc2980eb33c,Project Invitation,Omar invited you to join "Project 2" as a member,invitation,false,[object Object],Tue Aug 19 2025 22:56:19 GMT-0400 (Eastern Daylight Time)
+7bb19e2c-a79e-403e-a4cf-2c04a5094f33,cf9c6d60-3c47-44fc-88ed-ecc2980eb33c,Invitation Accepted,Welcome to "Project 2"! You've been added as a member.,project,false,[object Object],Tue Aug 19 2025 22:56:55 GMT-0400 (Eastern Daylight Time)
+87075c3e-017b-4c10-8fae-1e0be3fd1a4c,05d55cba-72b5-4fd1-b21a-184b9ab15d56,Test Notification,This is a test notification,test,true,[object Object],Sun Sep 21 2025 17:20:24 GMT-0400 (Eastern Daylight Time)

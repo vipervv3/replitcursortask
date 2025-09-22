@@ -1,0 +1,25 @@
+id,title,description,project_id,scheduled_at,duration,recording_url,transcription,ai_summary,extracted_tasks,created_by_id,created_at,is_recurring,recurrence_type,recurrence_interval,recurrence_end_date,recurring_parent_id,recurrence_pattern
+d42a800b-e6b2-49f3-acab-325ae7e76610,Debug Test Meeting Aq_K,Testing meeting display bug,,Tue Sep 23 2025 10:00:00 GMT-0400 (Eastern Daylight Time),60,,,,,5846bb6f-1205-4b40-927c-b7bb4ea85492,Mon Sep 22 2025 02:50:14 GMT-0400 (Eastern Daylight Time),false,,1,,,
+474bd81f-ceeb-41dd-a9c3-84d71624fd13,Automated Meeting jz0I,Meeting created by automated test script,,Mon Sep 22 2025 02:45:10 GMT-0400 (Eastern Daylight Time),60,,,,,b0ebe622-6ae7-4511-9806-f4c63eaf3f36,Mon Sep 22 2025 02:45:37 GMT-0400 (Eastern Daylight Time),false,,1,,,
+4ee087c8-3bfd-4776-b8eb-333b8aae7302,Voice Recording from Modal,AI-processed voice recording (ID: rec_1758509180570_suykrd32o),6d564954-127a-4e0d-984a-972a77c66808,Mon Sep 22 2025 02:46:20 GMT-0400 (Eastern Daylight Time),1,,This meeting is to discuss the front office summit that is coming up on October 20th. We need to put together a meeting on September 31st to discuss the food items and meet with food and beverage department to finalize the food for the summit. We also need to set up a meeting to discuss the activities for the summit and we also need to discuss the agenda of the summit. Let's try to set up some meetings over the next couple weeks to finalize everything for the summit.,"📅 **Meeting Overview**:  
+The purpose of the meeting was to plan for the upcoming Front Office Summit scheduled for October 20th. The discussion focused on organizing meetings to finalize food, activities, and the overall agenda for the summit.
+
+🎯 **Key Decisions Made**:
+- A meeting will be set for September 31st to discuss and finalize food items with the food and beverage department.
+
+📋 **Action Items**:
+- **Organizing Food Meeting**: Schedule a meeting with the food and beverage department for September 31st | Owner: [Designated Organizer] | Deadline: ASAP
+- **Activities Discussion**: Arrange a meeting to plan summit activities | Owner: [Team Leader] | Deadline: Within the next two weeks
+- **Agenda Finalization**: Set up a meeting to finalize the summit agenda | Owner: [Team Leader] | Deadline: Within the next two weeks
+
+💡 **Important Discussions**:
+- The need to organize meetings promptly to ensure sufficient time for summit preparations.
+- Ensuring coordination among various departments to streamline summit planning.
+
+⚠️ **Risks & Issues**:
+- Potential scheduling conflicts or delays in setting up necessary meetings could impact summit preparation timelines.
+- Need for timely confirmation from food and beverage department to avoid last-minute issues.
+
+📅 **Next Meeting/Follow-up**:
+- Follow-up meetings to be held over the next two weeks to discuss and finalize summit details.
+- Attendees should prepare specific agenda items and coordinate with relevant departments to ensure all aspects of the summit are covered.",[object Object],[object Object],[object Object],9a002ca6-ee3c-4ebb-953f-c602fdb3ecbd,Mon Sep 22 2025 02:47:19 GMT-0400 (Eastern Daylight Time),false,,1,,,
