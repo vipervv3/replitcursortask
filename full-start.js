@@ -43,6 +43,19 @@ if (missingVars.length > 0) {
 }
 
 console.log('\n✅ All environment variables are set!');
+console.log('🔄 Setting up database schema...');
+
+// First, ensure the database schema is set up
+try {
+  await import('./setup-railway-database.js');
+  console.log('✅ Database setup completed successfully!');
+} catch (error) {
+  console.error('❌ Database setup failed:', error.message);
+  console.log('🔄 Falling back to simple server mode...');
+  import('./simple-start.js');
+  return;
+}
+
 console.log('🔄 Starting full AI ProjectHub server...');
 
 // Import and start the full server
