@@ -8,9 +8,9 @@ console.log('🚀 AI ProjectHub - BULLETPROOF Start');
 console.log('Port:', process.env.PORT || 8080);
 console.log('Node version:', process.version);
 
-// Use require instead of import for maximum compatibility
-const http = require('http');
-const url = require('url');
+// Use import for ES modules compatibility
+import http from 'http';
+import url from 'url';
 
 const port = process.env.PORT || 8080;
 
