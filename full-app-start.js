@@ -46,7 +46,12 @@ async function startFullApp() {
   console.log('🔄 Attempting to start full AI ProjectHub...');
 
   try {
+    // Run diagnostics first
+    console.log('🔍 Running diagnostics...');
+    await import('./debug-startup.js');
+    
     // Import and start the full server
+    console.log('🔄 Importing full AI ProjectHub...');
     await import('./dist/index.js');
     console.log('🎉 Full AI ProjectHub started successfully!');
     console.log('🔐 Login page should now be available!');
