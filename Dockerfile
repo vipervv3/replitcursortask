@@ -12,10 +12,10 @@ RUN npm ci
 COPY . .
 
 # Build frontend only
-RUN npm run build
+RUN npm run railway-build
 
 # Expose port
 EXPOSE 8080
 
 # Start the application
-CMD ["node", "railway-start.js"]
+CMD ["npm", "run", "railway-start"]
