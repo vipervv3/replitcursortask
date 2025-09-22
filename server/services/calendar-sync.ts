@@ -229,7 +229,7 @@ export class CalendarSyncService {
     console.log(`Events with attendees: ${inviteEvents.length}`);
     console.log(`Recurring events found: ${recurringEvents.length}`);
     console.log(`Events today: ${todayEvents.length}`);
-    console.log(`Date range: ${Math.min(...Object.keys(eventsByMonth).map(m => m.replace('-', '')))} to ${Math.max(...Object.keys(eventsByMonth).map(m => m.replace('-', '')))}`);
+    console.log(`Date range: ${Math.min(...Object.keys(eventsByMonth).map(m => parseInt(m.replace('-', ''))))} to ${Math.max(...Object.keys(eventsByMonth).map(m => parseInt(m.replace('-', ''))))}`);
     
     if (recurringEvents.length > 0) {
       console.log(`\n⚠️  IMPORTANT: ${recurringEvents.length} recurring events are only showing their first occurrence.`);
@@ -386,8 +386,9 @@ export class CalendarSyncService {
       const events: CalendarEvent[] = [];
 
       // Handle RSS format
-      if (result.rss && result.rss.channel && result.rss.channel[0].item) {
-        const items = result.rss.channel[0].item;
+      const parsedResult = result as any;
+      if (parsedResult.rss && parsedResult.rss.channel && parsedResult.rss.channel[0].item) {
+        const items = parsedResult.rss.channel[0].item;
         
         for (const item of items) {
           const title = item.title?.[0] || 'Untitled Event';
