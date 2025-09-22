@@ -1,0 +1,20 @@
+Check out our code here: https://vercel.com/oss
+efee1454b946ca1f.js?dpl=dpl_FCxpeN5mm7RpkbDDPXTpmPWCtVuh:3 Have a great day! 📣🐢
+ Content Script Bridge: Sending response back to page context: Object
+ TSS: Received response from checkDomainAndRun: Object
+efee1454b946ca1f.js?dpl=dpl_FCxpeN5mm7RpkbDDPXTpmPWCtVuh:3 Uncaught Error: Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at rZ (efee1454b946ca1f.js?dpl=dpl_FCxpeN5mm7RpkbDDPXTpmPWCtVuh:3:50932)
+    at iu (efee1454b946ca1f.js?dpl=dpl_FCxpeN5mm7RpkbDDPXTpmPWCtVuh:3:94868)
+    at ib (efee1454b946ca1f.js?dpl=dpl_FCxpeN5mm7RpkbDDPXTpmPWCtVuh:3:104436)
+    at sI (efee1454b946ca1f.js?dpl=dpl_FCxpeN5mm7RpkbDDPXTpmPWCtVuh:3:143778)
+    at efee1454b946ca1f.js?dpl=dpl_FCxpeN5mm7RpkbDDPXTpmPWCtVuh:3:143623
+    at sL (efee1454b946ca1f.js?dpl=dpl_FCxpeN5mm7RpkbDDPXTpmPWCtVuh:3:143631)
+    at sk (efee1454b946ca1f.js?dpl=dpl_FCxpeN5mm7RpkbDDPXTpmPWCtVuh:3:138839)
+    at cl (efee1454b946ca1f.js?dpl=dpl_FCxpeN5mm7RpkbDDPXTpmPWCtVuh:3:172793)
+    at s7 (efee1454b946ca1f.js?dpl=dpl_FCxpeN5mm7RpkbDDPXTpmPWCtVuh:3:170696)
+    at ct (efee1454b946ca1f.js?dpl=dpl_FCxpeN5mm7RpkbDDPXTpmPWCtVuh:3:171053)
+c6ce9985673cde6b.js?dpl=dpl_FCxpeN5mm7RpkbDDPXTpmPWCtVuh:18 [DEPRECATED] Use `createWithEqualityFn` instead of `create` or use `useStoreWithEqualityFn` instead of `useStore`. They can be imported from 'zustand/traditional'. https://github.com/pmndrs/zustand/discussions/1937
+(anonymous) @ c6ce9985673cde6b.js?dpl=dpl_FCxpeN5mm7RpkbDDPXTpmPWCtVuh:18
+/api/v2/projects/replitaiproject?teamId=team_S4D39eBi9alDefB9gqva10e4:1  Failed to load resource: the server responded with a status of 404 ()
+/api/v2/projects/replitaiproject?deploymentInfo=0&teamId=team_S4D39eBi9alDefB9gqva10e4:1  Failed to load resource: the server responded with a status of 404 ()
+/api/v13/deployments?skipAutoDetectionConfirmation=1&teamId=team_S4D39eBi9alDefB9gqva10e4:1  Failed to load resource: the server responded with a status of 400 ()

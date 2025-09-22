@@ -1,0 +1,148 @@
+name: Build Mobile Apps
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-android:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: |
+        npm ci
+        npm ls || true
+        
+    - name: Build web app
+      run: |
+        npm run build
+        ls -la dist/
+        
+    - name: Setup Java
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '17'
+        
+    - name: Setup Android SDK
+      run: |
+        # Download and setup Android SDK
+        export ANDROID_SDK_ROOT=$HOME/android-sdk
+        export ANDROID_HOME=$ANDROID_SDK_ROOT
+        mkdir -p $ANDROID_SDK_ROOT
+        cd $ANDROID_SDK_ROOT
+        
+        # Download command line tools
+        wget -q https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip
+        unzip -q commandlinetools-linux-11076708_latest.zip
+        mkdir -p cmdline-tools/latest
+        mv cmdline-tools/* cmdline-tools/latest/ 2>/dev/null || true
+        
+        # Add to PATH
+        export PATH=$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$PATH
+        export PATH=$ANDROID_SDK_ROOT/platform-tools:$PATH
+        
+        # Install required packages for API 35
+        yes | sdkmanager --licenses
+        sdkmanager "platforms;android-35" "build-tools;35.0.0" "platform-tools"
+        
+        # Set environment for subsequent steps
+        echo "ANDROID_SDK_ROOT=$ANDROID_SDK_ROOT" >> $GITHUB_ENV
+        echo "ANDROID_HOME=$ANDROID_SDK_ROOT" >> $GITHUB_ENV
+        echo "$ANDROID_SDK_ROOT/cmdline-tools/latest/bin" >> $GITHUB_PATH
+        echo "$ANDROID_SDK_ROOT/platform-tools" >> $GITHUB_PATH
+      
+    - name: Sync Capacitor
+      run: |
+        npx cap sync android
+        ls -la android/
+        
+    - name: Make gradlew executable
+      run: chmod +x android/gradlew
+      
+    - name: Build Android APK
+      run: |
+        cd android
+        ./gradlew assembleDebug --stacktrace --info --no-daemon
+        
+    - name: Upload Android APK
+      uses: actions/upload-artifact@v4
+      with:
+        name: android-apk
+        path: android/app/build/outputs/apk/debug/app-debug.apk
+
+  build-ios:
+    runs-on: macos-14
+    timeout-minutes: 45
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: |
+        npm ci
+        npm ls || true
+        
+    - name: Build web app
+      run: |
+        npm run build
+        ls -la dist/
+        
+    - name: Sync Capacitor
+      run: |
+        npx cap sync ios
+        ls -la ios/
+        
+    - name: Install CocoaPods
+      run: |
+        cd ios/App
+        pod install --repo-update
+        
+    - name: Build iOS App (Simulator - No Signing)
+      run: |
+        cd ios/App
+        xcodebuild -workspace App.xcworkspace \
+                   -scheme App \
+                   -configuration Debug \
+                   -sdk iphonesimulator \
+                   -destination 'generic/platform=iOS Simulator' \
+                   CODE_SIGNING_ALLOWED=NO \
+                   DEVELOPMENT_TEAM= \
+                   PROVISIONING_PROFILE_SPECIFIER= \
+                   CODE_SIGN_IDENTITY="" \
+                   -derivedDataPath ./build \
+                   build
+                   
+    - name: Create iOS App Archive
+      run: |
+        cd ios/App
+        mkdir -p ./build/app
+        find ./build -name "*.app" -exec cp -R {} ./build/app/ \;
+        ls -la ./build/app/
+                   
+    - name: Upload iOS App
+      uses: actions/upload-artifact@v4
+      with:
+        name: ios-app
+        path: ios/App/build/app/

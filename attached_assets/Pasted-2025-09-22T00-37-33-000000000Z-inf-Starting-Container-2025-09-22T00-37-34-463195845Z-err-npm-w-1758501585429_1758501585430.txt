@@ -1,0 +1,221 @@
+2025-09-22T00:37:33.000000000Z [inf]  Starting Container
+2025-09-22T00:37:34.463195845Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-09-22T00:37:34.463199896Z [inf]  
+2025-09-22T00:37:34.463204138Z [inf]  > rest-express@1.0.0 start
+2025-09-22T00:37:34.463209560Z [inf]  > NODE_ENV=production node dist/index.js
+2025-09-22T00:37:34.463213568Z [inf]  
+2025-09-22T00:37:34.463217365Z [err]  file:///app/dist/index.js:370
+2025-09-22T00:37:34.463221296Z [err]        throw new Error(
+2025-09-22T00:37:34.463225557Z [err]              ^
+2025-09-22T00:37:34.463229813Z [err]  
+2025-09-22T00:37:34.463233589Z [err]  Error: DATABASE_URL must be set. Did you forget to provision a database?
+2025-09-22T00:37:34.463238110Z [err]      at server/db.ts (file:///app/dist/index.js:370:13)
+2025-09-22T00:37:34.463242239Z [err]      at __init (file:///app/dist/index.js:4:56)
+2025-09-22T00:37:34.463246886Z [err]      at server/storage.ts (file:///app/dist/index.js:394:5)
+2025-09-22T00:37:34.463250606Z [err]      at __init (file:///app/dist/index.js:4:56)
+2025-09-22T00:37:34.463254309Z [err]      at file:///app/dist/index.js:4098:1
+2025-09-22T00:37:34.463257770Z [err]      at ModuleJob.run (node:internal/modules/esm/module_job:345:25)
+2025-09-22T00:37:34.463261959Z [err]      at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:651:26)
+2025-09-22T00:37:34.463267125Z [err]      at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+2025-09-22T00:37:34.463270990Z [err]  
+2025-09-22T00:37:34.463274740Z [err]  Node.js v22.19.0
+2025-09-22T00:37:35.554902572Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-09-22T00:37:35.575980930Z [inf]  
+2025-09-22T00:37:35.575990184Z [inf]  > rest-express@1.0.0 start
+2025-09-22T00:37:35.575996017Z [inf]  > NODE_ENV=production node dist/index.js
+2025-09-22T00:37:35.576001747Z [inf]  
+2025-09-22T00:37:36.273852143Z [err]  file:///app/dist/index.js:370
+2025-09-22T00:37:36.273860055Z [err]        throw new Error(
+2025-09-22T00:37:36.273864353Z [err]              ^
+2025-09-22T00:37:36.273868793Z [err]  
+2025-09-22T00:37:36.273873113Z [err]  Error: DATABASE_URL must be set. Did you forget to provision a database?
+2025-09-22T00:37:36.273891911Z [err]      at server/db.ts (file:///app/dist/index.js:370:13)
+2025-09-22T00:37:36.273896544Z [err]      at __init (file:///app/dist/index.js:4:56)
+2025-09-22T00:37:36.273900456Z [err]      at server/storage.ts (file:///app/dist/index.js:394:5)
+2025-09-22T00:37:36.273905017Z [err]      at __init (file:///app/dist/index.js:4:56)
+2025-09-22T00:37:36.273908816Z [err]      at file:///app/dist/index.js:4098:1
+2025-09-22T00:37:36.273912624Z [err]      at ModuleJob.run (node:internal/modules/esm/module_job:345:25)
+2025-09-22T00:37:36.273916232Z [err]      at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:651:26)
+2025-09-22T00:37:36.273920549Z [err]      at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+2025-09-22T00:37:36.273924521Z [err]  
+2025-09-22T00:37:36.273930354Z [err]  Node.js v22.19.0
+2025-09-22T00:37:37.492902258Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-09-22T00:37:37.528485231Z [inf]  
+2025-09-22T00:37:37.528495826Z [inf]  > rest-express@1.0.0 start
+2025-09-22T00:37:37.528503133Z [inf]  > NODE_ENV=production node dist/index.js
+2025-09-22T00:37:37.528511151Z [inf]  
+2025-09-22T00:37:38.218341325Z [err]  file:///app/dist/index.js:370
+2025-09-22T00:37:38.218345987Z [err]        throw new Error(
+2025-09-22T00:37:38.218351656Z [err]              ^
+2025-09-22T00:37:38.218355578Z [err]  
+2025-09-22T00:37:38.218359322Z [err]  Error: DATABASE_URL must be set. Did you forget to provision a database?
+2025-09-22T00:37:38.218363007Z [err]      at server/db.ts (file:///app/dist/index.js:370:13)
+2025-09-22T00:37:38.218367037Z [err]      at __init (file:///app/dist/index.js:4:56)
+2025-09-22T00:37:38.218370846Z [err]      at server/storage.ts (file:///app/dist/index.js:394:5)
+2025-09-22T00:37:38.218374467Z [err]      at __init (file:///app/dist/index.js:4:56)
+2025-09-22T00:37:38.218378382Z [err]      at file:///app/dist/index.js:4098:1
+2025-09-22T00:37:38.218382319Z [err]      at ModuleJob.run (node:internal/modules/esm/module_job:345:25)
+2025-09-22T00:37:38.218386353Z [err]      at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:651:26)
+2025-09-22T00:37:38.218390197Z [err]      at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+2025-09-22T00:37:38.218394050Z [err]  
+2025-09-22T00:37:38.218397897Z [err]  Node.js v22.19.0
+2025-09-22T00:37:39.439004265Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-09-22T00:37:39.457469180Z [inf]  
+2025-09-22T00:37:39.457474886Z [inf]  > rest-express@1.0.0 start
+2025-09-22T00:37:39.457480976Z [inf]  > NODE_ENV=production node dist/index.js
+2025-09-22T00:37:39.457485267Z [inf]  
+2025-09-22T00:37:40.218896653Z [err]  file:///app/dist/index.js:370
+2025-09-22T00:37:40.218900478Z [err]        throw new Error(
+2025-09-22T00:37:40.218904399Z [err]              ^
+2025-09-22T00:37:40.218908673Z [err]  
+2025-09-22T00:37:40.218912745Z [err]  Error: DATABASE_URL must be set. Did you forget to provision a database?
+2025-09-22T00:37:40.218916256Z [err]      at server/db.ts (file:///app/dist/index.js:370:13)
+2025-09-22T00:37:40.218920049Z [err]      at __init (file:///app/dist/index.js:4:56)
+2025-09-22T00:37:40.218923997Z [err]      at server/storage.ts (file:///app/dist/index.js:394:5)
+2025-09-22T00:37:40.218927499Z [err]      at __init (file:///app/dist/index.js:4:56)
+2025-09-22T00:37:40.218931396Z [err]      at file:///app/dist/index.js:4098:1
+2025-09-22T00:37:40.218935698Z [err]      at ModuleJob.run (node:internal/modules/esm/module_job:345:25)
+2025-09-22T00:37:40.218941450Z [err]      at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:651:26)
+2025-09-22T00:37:40.218945147Z [err]      at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+2025-09-22T00:37:40.218949182Z [err]  
+2025-09-22T00:37:40.218952895Z [err]  Node.js v22.19.0
+2025-09-22T00:37:41.604908301Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-09-22T00:37:41.621442041Z [inf]  
+2025-09-22T00:37:41.621450420Z [inf]  > rest-express@1.0.0 start
+2025-09-22T00:37:41.621457362Z [inf]  > NODE_ENV=production node dist/index.js
+2025-09-22T00:37:41.621463305Z [inf]  
+2025-09-22T00:37:42.359585673Z [err]  file:///app/dist/index.js:370
+2025-09-22T00:37:42.359592311Z [err]        throw new Error(
+2025-09-22T00:37:42.359596562Z [err]              ^
+2025-09-22T00:37:42.359600674Z [err]  
+2025-09-22T00:37:42.359604902Z [err]  Error: DATABASE_URL must be set. Did you forget to provision a database?
+2025-09-22T00:37:42.359608602Z [err]      at server/db.ts (file:///app/dist/index.js:370:13)
+2025-09-22T00:37:42.359612427Z [err]      at __init (file:///app/dist/index.js:4:56)
+2025-09-22T00:37:42.359616361Z [err]      at server/storage.ts (file:///app/dist/index.js:394:5)
+2025-09-22T00:37:42.359621830Z [err]      at __init (file:///app/dist/index.js:4:56)
+2025-09-22T00:37:42.359625694Z [err]      at file:///app/dist/index.js:4098:1
+2025-09-22T00:37:42.359629591Z [err]      at ModuleJob.run (node:internal/modules/esm/module_job:345:25)
+2025-09-22T00:37:42.359634523Z [err]      at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:651:26)
+2025-09-22T00:37:42.359638704Z [err]      at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+2025-09-22T00:37:42.359642741Z [err]  
+2025-09-22T00:37:42.359646782Z [err]  Node.js v22.19.0
+2025-09-22T00:37:43.774506728Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-09-22T00:37:43.801776246Z [inf]  
+2025-09-22T00:37:43.801782200Z [inf]  > rest-express@1.0.0 start
+2025-09-22T00:37:43.801788388Z [inf]  > NODE_ENV=production node dist/index.js
+2025-09-22T00:37:43.801796178Z [inf]  
+2025-09-22T00:37:44.573638080Z [err]  file:///app/dist/index.js:370
+2025-09-22T00:37:44.573642974Z [err]        throw new Error(
+2025-09-22T00:37:44.573647187Z [err]              ^
+2025-09-22T00:37:44.573651427Z [err]  
+2025-09-22T00:37:44.573655917Z [err]  Error: DATABASE_URL must be set. Did you forget to provision a database?
+2025-09-22T00:37:44.573660177Z [err]      at server/db.ts (file:///app/dist/index.js:370:13)
+2025-09-22T00:37:44.573664586Z [err]      at __init (file:///app/dist/index.js:4:56)
+2025-09-22T00:37:44.573668944Z [err]      at server/storage.ts (file:///app/dist/index.js:394:5)
+2025-09-22T00:37:44.573673148Z [err]      at __init (file:///app/dist/index.js:4:56)
+2025-09-22T00:37:44.573679623Z [err]      at file:///app/dist/index.js:4098:1
+2025-09-22T00:37:44.573685272Z [err]      at ModuleJob.run (node:internal/modules/esm/module_job:345:25)
+2025-09-22T00:37:44.573690752Z [err]      at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:651:26)
+2025-09-22T00:37:44.573696393Z [err]      at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+2025-09-22T00:37:44.573702277Z [err]  
+2025-09-22T00:37:44.573707860Z [err]  Node.js v22.19.0
+2025-09-22T00:37:46.673010894Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-09-22T00:37:46.676583262Z [inf]  
+2025-09-22T00:37:46.676589900Z [inf]  > rest-express@1.0.0 start
+2025-09-22T00:37:46.676594527Z [inf]  > NODE_ENV=production node dist/index.js
+2025-09-22T00:37:46.676604144Z [inf]  
+2025-09-22T00:37:47.377285990Z [err]  file:///app/dist/index.js:370
+2025-09-22T00:37:47.377292583Z [err]        throw new Error(
+2025-09-22T00:37:47.377298704Z [err]              ^
+2025-09-22T00:37:47.377305274Z [err]  
+2025-09-22T00:37:47.377311674Z [err]  Error: DATABASE_URL must be set. Did you forget to provision a database?
+2025-09-22T00:37:47.377320300Z [err]      at server/db.ts (file:///app/dist/index.js:370:13)
+2025-09-22T00:37:47.377326553Z [err]      at __init (file:///app/dist/index.js:4:56)
+2025-09-22T00:37:47.377332824Z [err]      at server/storage.ts (file:///app/dist/index.js:394:5)
+2025-09-22T00:37:47.377337328Z [err]      at __init (file:///app/dist/index.js:4:56)
+2025-09-22T00:37:47.377342006Z [err]      at file:///app/dist/index.js:4098:1
+2025-09-22T00:37:47.377346361Z [err]      at ModuleJob.run (node:internal/modules/esm/module_job:345:25)
+2025-09-22T00:37:47.377350421Z [err]      at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:651:26)
+2025-09-22T00:37:47.377355530Z [err]      at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+2025-09-22T00:37:47.377360700Z [err]  
+2025-09-22T00:37:47.377366102Z [err]  Node.js v22.19.0
+2025-09-22T00:37:48.813666622Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-09-22T00:37:48.825865403Z [inf]  
+2025-09-22T00:37:48.825870964Z [inf]  > rest-express@1.0.0 start
+2025-09-22T00:37:48.825875643Z [inf]  > NODE_ENV=production node dist/index.js
+2025-09-22T00:37:48.825908745Z [inf]  
+2025-09-22T00:37:49.615383973Z [err]  file:///app/dist/index.js:370
+2025-09-22T00:37:49.615388992Z [err]        throw new Error(
+2025-09-22T00:37:49.615393132Z [err]              ^
+2025-09-22T00:37:49.615397346Z [err]  
+2025-09-22T00:37:49.615401923Z [err]  Error: DATABASE_URL must be set. Did you forget to provision a database?
+2025-09-22T00:37:49.615405658Z [err]      at server/db.ts (file:///app/dist/index.js:370:13)
+2025-09-22T00:37:49.615409814Z [err]      at __init (file:///app/dist/index.js:4:56)
+2025-09-22T00:37:49.615413426Z [err]      at server/storage.ts (file:///app/dist/index.js:394:5)
+2025-09-22T00:37:49.615417191Z [err]      at __init (file:///app/dist/index.js:4:56)
+2025-09-22T00:37:49.615424568Z [err]      at file:///app/dist/index.js:4098:1
+2025-09-22T00:37:49.615430018Z [err]      at ModuleJob.run (node:internal/modules/esm/module_job:345:25)
+2025-09-22T00:37:49.615436061Z [err]      at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:651:26)
+2025-09-22T00:37:49.615441966Z [err]      at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+2025-09-22T00:37:49.615447357Z [err]  
+2025-09-22T00:37:49.615453539Z [err]  Node.js v22.19.0
+2025-09-22T00:37:50.879702850Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-09-22T00:37:50.914942272Z [inf]  
+2025-09-22T00:37:50.914948834Z [inf]  > rest-express@1.0.0 start
+2025-09-22T00:37:50.914953301Z [inf]  > NODE_ENV=production node dist/index.js
+2025-09-22T00:37:50.914959531Z [inf]  
+2025-09-22T00:37:51.629288317Z [err]  file:///app/dist/index.js:370
+2025-09-22T00:37:51.629292836Z [err]        throw new Error(
+2025-09-22T00:37:51.629296493Z [err]              ^
+2025-09-22T00:37:51.629300418Z [err]  
+2025-09-22T00:37:51.629304380Z [err]  Error: DATABASE_URL must be set. Did you forget to provision a database?
+2025-09-22T00:37:51.629308909Z [err]      at server/db.ts (file:///app/dist/index.js:370:13)
+2025-09-22T00:37:51.629312977Z [err]      at __init (file:///app/dist/index.js:4:56)
+2025-09-22T00:37:51.629316917Z [err]      at server/storage.ts (file:///app/dist/index.js:394:5)
+2025-09-22T00:37:51.629320779Z [err]      at __init (file:///app/dist/index.js:4:56)
+2025-09-22T00:37:51.629324636Z [err]      at file:///app/dist/index.js:4098:1
+2025-09-22T00:37:51.629328674Z [err]      at ModuleJob.run (node:internal/modules/esm/module_job:345:25)
+2025-09-22T00:37:51.629332874Z [err]      at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:651:26)
+2025-09-22T00:37:51.629337685Z [err]      at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+2025-09-22T00:37:51.629341477Z [err]  
+2025-09-22T00:37:51.629345233Z [err]  Node.js v22.19.0
+2025-09-22T00:37:52.828825009Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-09-22T00:37:52.836896163Z [inf]  
+2025-09-22T00:37:52.836902374Z [inf]  > rest-express@1.0.0 start
+2025-09-22T00:37:52.836907237Z [inf]  > NODE_ENV=production node dist/index.js
+2025-09-22T00:37:52.836911514Z [inf]  
+2025-09-22T00:37:53.568159682Z [err]  file:///app/dist/index.js:370
+2025-09-22T00:37:53.568166501Z [err]        throw new Error(
+2025-09-22T00:37:53.568171115Z [err]              ^
+2025-09-22T00:37:53.568176536Z [err]  
+2025-09-22T00:37:53.568180742Z [err]  Error: DATABASE_URL must be set. Did you forget to provision a database?
+2025-09-22T00:37:53.568185017Z [err]      at server/db.ts (file:///app/dist/index.js:370:13)
+2025-09-22T00:37:53.568189087Z [err]      at __init (file:///app/dist/index.js:4:56)
+2025-09-22T00:37:53.568192939Z [err]      at server/storage.ts (file:///app/dist/index.js:394:5)
+2025-09-22T00:37:53.568197082Z [err]      at __init (file:///app/dist/index.js:4:56)
+2025-09-22T00:37:53.568205858Z [err]      at file:///app/dist/index.js:4098:1
+2025-09-22T00:37:53.568210122Z [err]      at ModuleJob.run (node:internal/modules/esm/module_job:345:25)
+2025-09-22T00:37:53.568215264Z [err]      at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:651:26)
+2025-09-22T00:37:53.568219160Z [err]      at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+2025-09-22T00:37:53.568222917Z [err]  
+2025-09-22T00:37:53.568226893Z [err]  Node.js v22.19.0
+2025-09-22T00:37:55.097485728Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-09-22T00:37:55.120092438Z [inf]  
+2025-09-22T00:37:55.120096957Z [inf]  > rest-express@1.0.0 start
+2025-09-22T00:37:55.120112416Z [inf]  > NODE_ENV=production node dist/index.js
+2025-09-22T00:37:55.120119490Z [inf]  
+2025-09-22T00:37:55.807064617Z [err]  file:///app/dist/index.js:370
+2025-09-22T00:37:55.807068889Z [err]        throw new Error(
+2025-09-22T00:37:55.807072963Z [err]              ^
+2025-09-22T00:37:55.807077963Z [err]  
+2025-09-22T00:37:55.807083512Z [err]  Error: DATABASE_URL must be set. Did you forget to provision a database?
+2025-09-22T00:37:55.807088106Z [err]      at server/db.ts (file:///app/dist/index.js:370:13)
+2025-09-22T00:37:55.807092001Z [err]      at __init (file:///app/dist/index.js:4:56)
+2025-09-22T00:37:55.807096214Z [err]      at server/storage.ts (file:///app/dist/index.js:394:5)
+2025-09-22T00:37:55.807100298Z [err]      at __init (file:///app/dist/index.js:4:56)
+2025-09-22T00:37:55.807104280Z [err]      at file:///app/dist/index.js:4098:1
+2025-09-22T00:37:55.807108786Z [err]      at ModuleJob.run (node:internal/modules/esm/module_job:345:25)
+2025-09-22T00:37:55.807113396Z [err]      at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:651:26)
+2025-09-22T00:37:55.807118151Z [err]      at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+2025-09-22T00:37:55.807122725Z [err]  
+2025-09-22T00:37:55.807126835Z [err]  Node.js v22.19.0

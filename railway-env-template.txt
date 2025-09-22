@@ -1,0 +1,27 @@
+# Railway Environment Variables Template
+# Set these variables in Railway dashboard under your project settings
+
+# Database Configuration
+DATABASE_URL=postgresql://username:password@host:port/database
+
+# Session Configuration
+SESSION_SECRET=your-super-secure-session-secret-here
+
+# AI Services
+ASSEMBLYAI_API_KEY=your-assemblyai-api-key
+OPENAI_API_KEY=your-openai-api-key
+GROQ_API_KEY=your-groq-api-key
+
+# Email Service
+RESEND_API_KEY=your-resend-api-key
+FROM_EMAIL=AI ProjectHub <noreply@yourdomain.com>
+
+# Outlook Integration (Optional)
+OUTLOOK_CLIENT_ID=your-outlook-client-id
+OUTLOOK_CLIENT_SECRET=your-outlook-client-secret
+OUTLOOK_TENANT_ID=your-outlook-tenant-id
+
+# Application URLs
+BASE_URL=https://your-app-name.railway.app
+
+# Railway will automatically set PORT, no need to set it manually
