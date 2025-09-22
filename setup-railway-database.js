@@ -5,10 +5,7 @@
  * This script creates all necessary tables for AI ProjectHub
  */
 
-import { drizzle } from 'drizzle-orm/node-postgres';
 import { Pool } from 'pg';
-import * as schema from './shared/schema.js';
-import { sql } from 'drizzle-orm';
 
 console.log('🚀 Setting up Railway PostgreSQL Database...');
 
@@ -32,12 +29,10 @@ async function setupDatabase() {
     const client = await pool.connect();
     console.log('✅ Connected to Railway PostgreSQL');
 
-    const db = drizzle(pool, { schema });
-
     console.log('🔄 Creating database schema...');
 
-    // Create all tables based on the schema
-    await db.execute(sql`
+    // Create all tables using raw SQL
+    await client.query(`
       CREATE TABLE IF NOT EXISTS users (
         id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
         username TEXT NOT NULL UNIQUE,
@@ -50,7 +45,7 @@ async function setupDatabase() {
       )
     `);
 
-    await db.execute(sql`
+    await client.query(`
       CREATE TABLE IF NOT EXISTS projects (
         id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
         name TEXT NOT NULL,
@@ -64,7 +59,7 @@ async function setupDatabase() {
       )
     `);
 
-    await db.execute(sql`
+    await client.query(`
       CREATE TABLE IF NOT EXISTS tasks (
         id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
         title TEXT NOT NULL,
@@ -80,7 +75,7 @@ async function setupDatabase() {
       )
     `);
 
-    await db.execute(sql`
+    await client.query(`
       CREATE TABLE IF NOT EXISTS meetings (
         id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
         title TEXT NOT NULL,
@@ -95,7 +90,7 @@ async function setupDatabase() {
       )
     `);
 
-    await db.execute(sql`
+    await client.query(`
       CREATE TABLE IF NOT EXISTS external_meetings (
         id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
         title TEXT NOT NULL,
@@ -108,7 +103,7 @@ async function setupDatabase() {
       )
     `);
 
-    await db.execute(sql`
+    await client.query(`
       CREATE TABLE IF NOT EXISTS user_settings (
         id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
         user_id UUID REFERENCES users(id) NOT NULL UNIQUE,
@@ -120,7 +115,7 @@ async function setupDatabase() {
       )
     `);
 
-    await db.execute(sql`
+    await client.query(`
       CREATE TABLE IF NOT EXISTS project_members (
         id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
         project_id UUID REFERENCES projects(id) NOT NULL,
