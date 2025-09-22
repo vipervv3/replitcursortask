@@ -47,9 +47,19 @@ async function startFullApp() {
     const { spawn } = await import('child_process');
     
     console.log('🚀 Launching full AI ProjectHub with tsx...');
+    console.log('📁 Current directory:', process.cwd());
+    console.log('🔍 Checking if server/index.ts exists...');
+    
+    const fs = await import('fs');
+    if (!fs.existsSync('./server/index.ts')) {
+      throw new Error('server/index.ts not found');
+    }
+    console.log('✅ server/index.ts found');
+    
     const child = spawn('npx', ['tsx', 'server/index.ts'], {
       stdio: 'inherit',
-      env: { ...process.env, NODE_ENV: 'production' }
+      env: { ...process.env, NODE_ENV: 'production' },
+      cwd: process.cwd()
     });
 
     child.on('error', (error) => {
@@ -71,6 +81,7 @@ async function startFullApp() {
 
   } catch (error) {
     console.error('❌ Unexpected error starting full app:', error.message);
+    console.error('Stack trace:', error.stack);
     console.log('🔄 Falling back to basic server mode...');
     await import('./bulletproof-start.js');
   }
